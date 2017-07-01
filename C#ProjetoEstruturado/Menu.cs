@@ -7,7 +7,7 @@
             int X = 9999;
 
 			while(X!=0){
-				Console.WriteLine("1-Area do quadrado\n2-Tipo do triangulo\n3-Sqvare\n");
+				Console.WriteLine("1-Area do quadrado\n2-Tipo do triangulo\n3-calculadora\n");
 				X =  Convert.ToInt32(Console.ReadLine());
 				
 				if(X==1){
@@ -45,13 +45,71 @@
 					}
 					
 					
-						
-
-					
-					
 				}
 				if(X==3){
-					Console.WriteLine("Você está no dominio da Sqvare\n");					
+					Console.WriteLine("Você deseja:\n1-Somar\n2-Subtrair\n3-Multiplicar\n4-Dividir\n");
+					X = Convert.ToInt32(Console.ReadLine());
+			
+					if(X==1){
+						Console.WriteLine("Digite um numero");
+						int A = Convert.ToInt32(Console.ReadLine());
+
+					
+						Console.WriteLine("Digite outro numero: ");
+						int B = Convert.ToInt32(Console.ReadLine());
+							
+						int resultado = A+B;
+						
+						Console.WriteLine("Resultado:{0}",resultado);	
+						Console.WriteLine("\n");
+							
+					}
+
+					if(X==2){
+						Console.WriteLine("Digite um numero");
+						int A = Convert.ToInt32(Console.ReadLine());
+
+					
+						Console.WriteLine("Digite outro numero: ");
+						int B = Convert.ToInt32(Console.ReadLine());
+							
+						int resultado = A-B;
+						
+						Console.WriteLine("Resultado:{0}",resultado);
+						Console.WriteLine("\n");
+
+					}
+
+					if(X==3){
+						Console.WriteLine("Digite um numero");
+						int A = Convert.ToInt32(Console.ReadLine());
+
+					
+						Console.WriteLine("Digite outro numero: ");
+						int B = Convert.ToInt32(Console.ReadLine());
+							
+						int resultado = A*B;
+						
+						Console.WriteLine("Resultado:{0}",resultado);
+						Console.WriteLine("\n");
+						
+					}	
+							
+					if(X==4){
+						Console.WriteLine("Digite um numero");
+						int A = Convert.ToInt32(Console.ReadLine());
+
+					
+						Console.WriteLine("Digite outro numero: ");
+						int B = Convert.ToInt32(Console.ReadLine());
+							
+						int resultado = A/B;
+						
+						Console.WriteLine("Resultado:{0}",resultado);
+						Console.WriteLine("\n");
+						
+					}		
+						
 				}		
 			}	
         }      
